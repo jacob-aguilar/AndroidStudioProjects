@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Piensa Rápido</string>
+    <string name="configuracion"> Acerca de</string>>
+    <string name="idea"> Idea</string>>
+
+
+    <string name="txt_idea">Gestiona ideas para futuros niveles</string>
+    <string name="txt_numero">Introduce un número de búsqueda</string>
+    <string name="txt_descripcion">Descripción de la idea</string>
+    <string name="txt_respuesta">Respuesta al nivel sugerido</string>
+
+    <string name="botonRegistrar">Registrar</string>
+    <string name="buttonbuscar">Buscar</string>
+    <string name="buttoneliminar">Eliminar</string>
+    <string name="buttonmodificar">Modificar</string>
+
+    <string name="configuracionsonido">Configuración</string>
+    <string name="sonido">Sonido</string>
+    <string name="seleccionsi">Si</string>
+    <string name="seleccionno">No</string>
+
+    <string name="hechopor">Desarrollada por: Jacob Aguilar</string>
+    <string name="infodesarollador">Informática Administrativa UNAH-TD</string>
+
+    <string name="textIntentos">Intentos: 3</string>
+    <string name="textPuntos">Puntos: 0</string>
+    <string name="respuesta">Escribe tu respuesta</string>
+    <string name="botonconfirmar">Confirmar</string>
+</resources>

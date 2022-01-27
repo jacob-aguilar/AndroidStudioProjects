@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SolicitudPermisoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solicitud de permisos"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:id="@+id/tituloSolicitud"
+                android:textStyle="bold"
+                android:layout_margin="15dp"
+                />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tituloSolicitud"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fechaInicialTV"
+                        android:text="Fecha Incial:"
+                        android:layout_margin="10dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:focusable="false"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fechaInicialSolicitud"
+                        android:layout_toEndOf="@+id/fechaInicialTV"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha final: "
+                        android:layout_margin="10dp"
+                        android:id="@+id/fechafinalTV"
+                        android:layout_below="@+id/fechaInicialSolicitud"
+                        />
+                    <EditText
+                        android:focusable="false"
+                        android:layout_width="match_parent"
+                        android:layout_toEndOf="@+id/fechafinalTV"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fechaInicialSolicitud"
+                        android:id="@+id/fechaFinalSolic"
+                        />
+                   <TextView
+                       android:id="@+id/textSelecPermiso"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:layout_margin="10dp"
+                       android:text="Seleccione: "
+                       android:layout_below="@id/fechaFinalSolic"/>
+
+                    <Spinner
+                        android:id="@+id/spinerTipoPermiso"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/fechaFinalSolic"
+                        android:layout_toRightOf="@+id/textSelecPermiso"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hora Inicial"
+                        android:layout_below="@+id/spinerTipoPermiso"
+                        android:layout_margin="10dp"
+                        android:id="@+id/horaInicioTV"
+                        />
+                    <EditText
+                        android:focusable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinerTipoPermiso"
+                        android:layout_toEndOf="@+id/horaInicioTV"
+                        android:id="@+id/hora_inicialSolicitud"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hora final:"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/horaInicioTV"
+                        android:id="@+id/horaFinalTv"
+                        />
+                    <EditText
+                        android:focusable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/horaFinalTv"
+                        android:id="@+id/horaFinalSolicitud"
+                        android:layout_below="@+id/hora_inicialSolicitud"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Observaciones:"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/horaFinalTv"
+                        android:id="@+id/observacionText"
+                        />
+
+                    <EditText
+                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/horaFinalTv"
+                        android:id="@+id/observaconesEdit"
+                        android:maxEms="15"
+                        android:lines="1"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:maxLength="15"
+                        android:layout_marginLeft="30dp"
+                        android:layout_below="@+id/horaFinalTv"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Detalle:"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/observacionText"
+                        android:id="@+id/detalleText"
+                        />
+
+                    <EditText
+                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/horaFinalTv"
+                        android:id="@+id/detalleEdit"
+                        android:maxEms="80"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="end"
+                        android:maxLength="80"
+                        android:layout_below="@+id/observacionText"
+
+                        />
+
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exportarSolicitud"
+                        android:text="Exportar"
+                        android:layout_below="@+id/detalleEdit"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/boton"
+                        android:textColor="#fff"
+                        android:onClick="generarPDF"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

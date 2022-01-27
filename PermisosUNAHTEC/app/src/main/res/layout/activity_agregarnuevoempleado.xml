@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".AgregarNuevoEmpleado">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imagePerfil"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:onClick="agregarFoto"
+                android:src="@drawable/perfil"
+
+                />
+
+            <EditText
+                android:id="@+id/EditCodDepto"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_usuario"
+                android:focusable="false"
+                android:hint="Departamento"
+                android:textAllCaps="true"
+                android:textColorHint="#FFFF"
+                android:visibility="invisible">
+
+            </EditText>
+
+
+            <Spinner
+                android:id="@+id/sppinerRol"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_usuario"
+                android:hint="Nombre"
+                android:textColor="#FFFF"
+                android:textColorHint="#FFFF">
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/EditNombreNuevoEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_usuario"
+                android:hint=" Nombre"
+                android:inputType="textCapWords"
+                android:maxEms="40"
+                android:maxLength="40"
+                android:textColor="#FFFF"
+                android:textColorHint="#FFFF">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/EditCodigoAgregarNuevoEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_paracodigo"
+                android:hint=" Código"
+                android:inputType="number"
+                android:maxEms="10"
+                android:maxLength="10"
+                android:textColor="#FFFf"
+                android:textColorHint="#FFFF" />
+
+
+            <EditText
+                android:id="@+id/EditCorreoAgregarNuevoEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_email"
+                android:ems="10"
+                android:hint=" Correo Electrónico"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFF"
+                android:textColorHint="#FFFF" />
+
+            <EditText
+                android:id="@+id/EditContraseniaAgregarNuevoEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_contrasena"
+                android:hint=" Contraseña"
+                android:inputType="textPassword"
+                android:textColor="#FFFF"
+                android:textColorHint="#FFFF" />
+
+            <EditText
+                android:id="@+id/EditConfirmarContraseniaAgregarEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_contrasena"
+                android:hint=" Confirmar Contraseña"
+                android:inputType="textPassword"
+                android:textColor="#FFFF"
+                android:textColorHint="#FFFF" />
+
+
+            <Button
+                android:id="@+id/btnAgregarnuevoEmpleado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boton"
+                android:text="Agregar"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10sp"></View>
+
+    <TextView
+        android:id="@+id/configuracionsonido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configurar"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15sp"></View>
+
+    <TextView
+        android:id="@+id/sonido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sonido"
+        android:textColor="#555"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10sp"></View>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/seleccionsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="SI"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioButton
+            android:id="@+id/seleccionno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="NO"
+            android:layout_marginLeft="10dp"/>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+     -->
+     <string name="app_name">Think fast</string>
+    <string name="configuracion"> About</string>>
+    <string name="idea"> Idea</string>>
+
+    <string name="txt_idea">Manage ideas for future levels</string>
+    <string name="txt_numero">Enter a search number</string>
+    <string name="txt_descripcion">Description of the idea</string>
+    <string name="txt_respuesta">Response to the suggested level</string>
+
+    <string name="botonRegistrar">Record idea</string>
+    <string name="buttonbuscar">Search idea</string>
+    <string name="buttoneliminar">Delete idea</string>
+    <string name="buttonmodificar">Modify idea</string>
+
+    <string name="configuracionsonido">Set up</string>
+    <string name="sonido">Sound</string>
+    <string name="seleccionsi">Yes</string>
+    <string name="seleccionno">Do not</string>
+
+    <string name="hechopor">Developed by: Jacob Aguilar</string>
+    <string name="infodesarollador">Computing Administrative UNAH-TD</string>
+
+    <string name="textIntentos">Attempts: 3</string>
+    <string name="textPuntos">Points: 0</string>
+    <string name="respuesta">Enter your answer</string>
+    <string name="botonconfirmar">Confirm</string>
+
+</resources>

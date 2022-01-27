@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="5dp">
+
+
+<LinearLayout
+    android:layout_width="10dp"
+    android:layout_weight="6"
+    android:id="@+id/RL1"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/escribir_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Graduacion mi tia"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+</LinearLayout>

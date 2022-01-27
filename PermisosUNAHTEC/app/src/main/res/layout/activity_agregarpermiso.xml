@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarPermisos"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            card_view:contentPadding="8dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="3dp"
+            card_view:cardUseCompatPadding="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinnerpermisos"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/custom_edittext"
+                    android:textColor="#FFFF"
+                    android:textColorHint="#FFFF"
+                    />
+
+                <TextView
+                    android:id="@+id/btnFechaInicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerpermisos"
+                    android:layout_marginTop="56dp"
+                    android:text="Fecha Inicio"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextFechaInicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/calendario_icon"
+                    android:layout_marginTop="44dp"
+                    android:layout_below="@id/spinnerpermisos"
+                    android:layout_marginStart="23dp"
+                    android:layout_toEndOf="@+id/btnFechaInicio"
+                    android:ems="10"
+                    android:textColor="#FFFF"
+                    android:background="@drawable/custom_edittext"
+                    />
+
+                <TextView
+                    android:id="@+id/btnfechaFin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnFechaInicio"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="69dp"
+                    android:text="Fecha Fin"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextFechaFin"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/calendario_icon"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:textColor="#FFFF"
+                    android:layout_below="@id/editTextFechaInicio"
+                    android:layout_alignStart="@+id/editTextFechaInicio" />
+
+                <TextView
+                    android:id="@+id/btnObservaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/editTextFechaFin"
+                    android:layout_alignStart="@+id/editTextFechaFin"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+
+                    android:gravity="center"
+                    android:text="Observaciones"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextobservaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/btnObservaciones"
+                    android:layout_alignStart="@+id/btnObservaciones"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:textColor="#FFFF"
+                    android:textColorHint="#FFFF" />
+
+                <Button
+                    android:id="@+id/btnGuardarPermiso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextobservaciones"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:text="Guardar"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:onClick="agregarPermiso"
+                    android:background="@drawable/boton"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+</RelativeLayout>

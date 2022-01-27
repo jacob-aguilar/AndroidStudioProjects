@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="    Otra Actividad"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="    Nombre"
+        android:textColor="#111"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/asunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="   Escriba su nombre"
+        android:inputType="textMultiLine"/>
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="    Correo Electronico"
+        android:textColor="#111"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="   ejemplo@unah.eddu.hn"
+        android:inputType="textImeMultiLine" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="     Lenguajes que conoce"
+    android:textSize="20dp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="C++"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Java"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Nu++"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+</LinearLayout>

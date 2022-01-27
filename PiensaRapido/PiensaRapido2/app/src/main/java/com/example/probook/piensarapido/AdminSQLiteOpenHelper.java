@@ -1,0 +1,26 @@
+package com.example.probook.piensarapido;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+
+/**
+ * Created by Jacob on 12/11/2018.
+ */
+
+public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
+    public AdminSQLiteOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, name, factory, version);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase BaseDeDatos) {
+        BaseDeDatos.execSQL("create table articulos(codigo int primary key, descripcion text, precio text)");
+        BaseDeDatos.execSQL("create table puntaje(score int)");
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+
+    }
+}

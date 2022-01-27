@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/color_rojo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rojo"
+        android:onClick="check"
+        android:checked="true"/>
+
+    <CheckBox
+        android:id="@+id/color_verde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verde"
+        android:onClick="check"/>
+
+    <CheckBox
+        android:id="@+id/color_azul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Azul"
+        android:onClick="check"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/genero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/genero_hombre"
+            android:text="Hombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:id="@+id/genero_mujer"
+            android:text="Mujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/genero_otros"
+            android:text="Prefiero no decirlo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <Switch
+        android:text="Jsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"/>
+
+    <Switch
+        android:text="Php"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:text="Aspx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <ToggleButton
+        android:textOff="Encender"
+        android:textOn="Apagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="turn"/>
+
+    <ToggleButton
+        android:textOff="Activar"
+        android:textOn="Desactivar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click"/>
+
+</LinearLayout>

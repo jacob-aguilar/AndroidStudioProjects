@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/logo2"
+    tools:context="com.example.personal.login_webservice.registrologin">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:src="@drawable/kk"
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOSPITAL MEDICO DEL DÍA MANABÍ "
+            android:textSize="17dp"
+
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="normal|bold" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+        <EditText
+            android:id="@+id/registro_cedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Cedula"
+
+            android:maxLength="12"
+            android:lines="1"
+            android:backgroundTint="@color/azul"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:textColorHint="@color/azul"
+
+            />
+
+
+        <EditText
+            android:id="@+id/registro_nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Nombres"
+            android:lines="1"
+            android:maxLength="30"
+            android:backgroundTint="@color/azul"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:textColorHint="@color/azul"
+
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/registro_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/azul"
+            android:lines="1"
+            android:backgroundTint="@color/azul"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:hint="  Correo"
+            />
+
+        <EditText
+            android:id="@+id/registro_contraseña"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/azul"
+            android:backgroundTint="@color/azul"
+            android:layout_height="wrap_content"
+            android:hint=" Contraseña"
+            android:lines="1"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            />
+
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_marginTop="20dp"
+            android:layout_width="180dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:text="REGISTRAR"
+            android:textColor="#000"
+            android:background="@drawable/oval"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

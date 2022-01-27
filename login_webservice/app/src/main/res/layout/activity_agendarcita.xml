@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_agendarcita"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/logo2"
+    tools:context="com.example.personal.login_webservice.agendarcita">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione el área donde desea agendar su cita"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/background_dark" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:orientation = "vertical"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+        <android.support.v7.widget.CardView
+            android:clickable = "true"
+            android:id="@+id/traumatologia"
+
+
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "10dp">
+               <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:orientation = "horizontal"
+
+                android:background="@drawable/color"
+
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:padding = "10dp"
+                    android:layout_marginLeft="-110dp"
+                    android:src="@drawable/traumatologia"
+                    />
+                <TextView
+                    android:id="@+id/txt_espe_traumatologia"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:textStyle = "bold"
+                    android:textSize="20dp"
+                    android:text="Traumotología"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop = "-3dp"
+                    />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:clickable = "true"
+            android:id="@+id/cardiologia"
+
+
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "10dp">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:orientation = "horizontal"
+
+                android:background="@drawable/color"
+
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:padding = "10dp"
+                    android:layout_marginLeft="-140dp"
+                    android:src="@drawable/cardiologia"
+                    />
+                <TextView
+                    android:id="@+id/txt_area_cardiologia"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:textStyle = "bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop = "-3dp"
+                    android:textSize="20dp"
+                    android:text = "Cardiología" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:clickable = "true"
+            android:id="@+id/pediatra"
+
+
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "10dp">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:orientation = "horizontal"
+
+                android:background="@drawable/color"
+
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:padding = "10dp"
+                    android:layout_marginLeft="-40dp"
+                    android:src="@drawable/pediatra"
+                    />
+                <TextView
+                    android:id="@+id/txt_pediatra"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:textStyle = "bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop = "-3dp"
+                    android:text = "Pediatra Neumatólogo" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:clickable = "true"
+            android:id="@+id/ginecologia"
+
+
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "10dp">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:orientation = "horizontal"
+
+                android:background="@drawable/color"
+
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:padding = "10dp"
+                    android:layout_marginLeft="-132dp"
+                    android:src="@drawable/ginecologia"
+                    />
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:textStyle = "bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop = "-3dp"
+                    android:textSize="20dp"
+                    android:text = "Ginecología" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:clickable = "true"
+            android:id="@+id/obstetricia"
+
+
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "10dp">
+
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:orientation = "horizontal"
+
+                android:background="@drawable/color"
+
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:padding = "10dp"
+                    android:layout_marginLeft="-140dp"
+                    android:src="@drawable/ostetricia"
+                    />
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:textStyle = "bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop = "-3dp"
+                    android:textSize="20dp"
+                    android:text = "Obstetricia" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:clickable = "true"
+            android:id="@+id/cirugia"
+
+
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "10dp">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:orientation = "horizontal"
+
+                android:background="@drawable/color"
+
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:padding = "10dp"
+                    android:layout_marginLeft="-100dp"
+                    android:src="@drawable/cirugiageneral"
+                    />
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:textStyle = "bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop = "-3dp"
+                    android:text = "Cirugía General" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:clickable = "true"
+            android:id="@+id/medicinageneral"
+
+
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "10dp">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:orientation = "horizontal"
+
+                android:background="@drawable/color"
+
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:padding = "10dp"
+                    android:layout_marginLeft="-90dp"
+                    android:src="@drawable/medicinageneral"
+                    />
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:textStyle = "bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop = "-3dp"
+                    android:textSize="20dp"
+                    android:text = "Medicina General" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+   </ScrollView>
+</LinearLayout>

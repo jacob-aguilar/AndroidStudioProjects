@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <Button
+        android:id="@+id/ejecutar"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:onClick="ejecutar"
+        android:text="Ejecutar" />
+    <TextView android:id="@+id/salida"
+        android:layout_above="@id/barra_progreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#488050"
+        android:textSize="25sp"/>
+    <ProgressBar
+        android:id="@+id/barra_progreso"
+        android:layout_alignParentBottom="true"
+        android:minHeight="20dp"
+        android:maxHeight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"/>
+</RelativeLayout>

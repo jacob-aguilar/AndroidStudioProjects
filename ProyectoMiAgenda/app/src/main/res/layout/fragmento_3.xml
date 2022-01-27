@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.Fragmento_Acerca_De">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:text=" Es una agenda electrónica que te
+  permitirá anotar desde fechas
+  importantes tareas y hasta notas
+  diarias que quieras ir documentando
+  como tu propio diario personal.
+  Esta agenda para organizarse tiene
+  diferentes secciones que podrás
+  utilizar según tu necesidad, con Mi
+  Agenda en solo unos clics podrás
+  crear diferentes actividades,
+  eventos,recordar cumpleaños y tomar
+  notas y lista de tareas que necesites
+  recordar.
+
+   Creadora:
+   sesiayarelimendoza@gmail.com" />
+
+</LinearLayout>

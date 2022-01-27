@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/celes"
+    tools:context="com.example.personal.login_webservice.Main2Activity">
+    <android.support.v7.widget.CardView
+        android:clickable = "true"
+        android:id="@+id/cinco"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="35dp"
+        >
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:orientation = "vertical"
+
+
+
+            android:gravity="center">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="120dp"
+               android:src="@drawable/verif"
+
+               />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lina"
+                android:layout_marginTop="-20dp"
+
+                />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="15dp"
+                android:text="Presiona verificar, verificaremos si la cita no ha sido agendada anteriormente."
+
+                android:fontFamily="serif"
+                android:textAlignment="center" />
+
+            <TextView
+             android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:hint="Especialidad"
+
+            android:id="@+id/espprac"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/docpra"
+                android:textSize="20dp"
+                android:hint="Doctor"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/fechprac"
+                android:hint="Fecha"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/horaprac"
+                android:hint="Horario"
+                android:textSize="20dp"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="vertical"
+            >
+
+            <Button
+
+                android:layout_marginTop="38dp"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="verificar"
+                android:background="@drawable/oval"
+                android:id="@+id/veri"
+                android:textColor="#000"
+
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>

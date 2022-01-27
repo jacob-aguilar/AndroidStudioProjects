@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/filtroReporte"
+        android:icon="@drawable/filtro_icon"
+        android:title="Filtro"
+        app:showAsAction="always">
+        <menu>
+
+            <item
+                android:checked="false"
+                android:enabled="false"
+                android:title="Filtrar" />
+            <item
+                android:id="@+id/deptoFiltro"
+                android:title="Departamento" />
+            <item
+                android:id="@+id/empleadoFiltro"
+                android:title="Empleado" />
+            <item
+                android:id="@+id/tipoPermisoMenu"
+                android:title="Tipo de Permiso" />
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clipToPadding="false"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:background="#fff"
+        android:elevation="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/icono"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#aaddff"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/tarea_azul"/>
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icono"
+            android:layout_alignParentRight="true"
+            android:textSize="25sp"
+            android:text="Titulo"
+            android:layout_marginBottom="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:gravity="left|top"
+            android:layout_below="@id/titulo"
+            android:layout_toRightOf="@id/icono"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Descripcion"/>
+    </RelativeLayout>
+</LinearLayout>

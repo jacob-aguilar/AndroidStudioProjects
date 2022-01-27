@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!---android:background="@drawable/homero2" -->
+
+    <View
+        android:layout_width="6dp"
+        android:layout_height="13dp"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="5dp"
+            ></View>
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="78dp"
+            android:src="@drawable/premios2" />
+
+
+        <TextView
+            android:id="@+id/mejorpuntuacion"
+            android:layout_width="192dp"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="8sp"
+            android:text="MEJOR PUNTUACIÓN"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="76dp"
+            android:layout_height="84dp"
+            android:src="@drawable/premios3" />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="5dp"
+            ></View>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

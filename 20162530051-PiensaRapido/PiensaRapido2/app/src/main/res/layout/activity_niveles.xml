@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="34dp"
+        android:layout_height="24dp"></View>
+
+    <TextView
+        android:id="@+id/gestionar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="@string/txt_idea"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txt_numero"
+        android:layout_width="330dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:hint="@string/txt_numero"
+        android:inputType="number"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txt_descripcion"
+        android:layout_width="331dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/txt_descripcion"
+        android:inputType="textPersonName"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txt_respuesta"
+        android:layout_width="331dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/txt_respuesta"
+        android:inputType="textMultiLine"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="31dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="61dp"
+                android:layout_height="match_parent"></View>
+
+            <Button
+                android:id="@+id/botonRegistrar"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/borde_redondo"
+                android:gravity="center"
+                android:onClick="Registrar"
+                android:text="@string/botonRegistrar" />
+
+            <View
+                android:layout_width="34dp"
+                android:layout_height="24dp"></View>
+
+            <Button
+                android:id="@+id/buttonbuscar"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_redondo"
+                android:onClick="Buscar"
+                android:text="@string/buttonbuscar" />
+
+            <View
+                android:layout_width="34dp"
+                android:layout_height="24dp"></View>
+
+        </LinearLayout>
+        <View
+            android:layout_width="34dp"
+            android:layout_height="24dp"></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="match_parent"></View>
+
+            <Button
+                android:id="@+id/buttonmodificar"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/borde_redondo"
+                android:onClick="Modificar"
+                android:text="@string/buttonmodificar" />
+
+            <View
+                android:layout_width="34dp"
+                android:layout_height="24dp"></View>
+
+            <Button
+                android:id="@+id/buttoneliminar"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_redondo"
+                android:onClick="Eliminar"
+                android:text="@string/buttoneliminar" />
+
+            <View
+                android:layout_width="34dp"
+                android:layout_height="24dp"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

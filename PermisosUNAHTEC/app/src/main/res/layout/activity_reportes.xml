@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reportes">
+
+
+    <TextView
+        android:id="@+id/generacionreportes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Generación de Reportes"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generacionreportes"
+        android:layout_margin="7dp"
+        android:elevation="6dp"
+        app:cardCornerRadius="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:background="#B2DFDB">
+
+        <RelativeLayout
+            android:id="@+id/RLT2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/filtroTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Departamento:"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:id="@+id/filtroTextEmpleado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filtroTextView"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Empleados:  "
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:id="@+id/filtroTextTitpoEmpleado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filtroEditTextEmpleados"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="Tipo Permiso:  "
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fecinicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filtroEditTextPermisos"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Fecha inicial:    "
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fecfin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fecinicio"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Fecha final:      "
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/filtroEditTextDeptos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/filtroTextView"
+                android:focusable="false" />
+
+            <EditText
+                android:id="@+id/filtroEditTextEmpleados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filtroEditTextDeptos"
+                android:layout_marginTop="10dp"
+
+                android:layout_toRightOf="@+id/filtroTextView"
+                android:focusable="false" />
+
+            <Spinner
+                android:id="@+id/filtroEditTextPermisos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filtroEditTextEmpleados"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/filtroTextView"
+                android:focusable="false"
+
+
+                />
+
+            <EditText
+                android:id="@+id/fecInicioET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filtroEditTextPermisos"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/fecinicio"
+                android:focusable="false" />
+
+            <EditText
+                android:id="@+id/fecfinET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fecInicioET"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/fecfin"
+                android:focusable="false" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/fecfinET"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btngenerar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="generarReporte"
+                android:background="@drawable/boton"
+                android:textColor="#ffff"
+                android:text="GENERAR"
+                android:layout_margin="5dp"
+
+                />
+
+            <Button
+                android:id="@+id/btnreset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton"
+                android:onClick="resetReporte"
+                android:text="RESET"
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

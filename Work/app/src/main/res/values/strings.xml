@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tareas</string>
+    <string name="lbl_titulo">Título</string>
+    <string name="lbl_descripcion">Descripción</string>
+    <string name="lbl_fecha_hora">Fecha y hora</string>
+    <string name="lbl_fecha">Fecha</string>
+    <string name="lbl_hora">Hora</string>
+    <string name="lbl_guardar">Guardar</string>
+    <string name="lbl_cancelar">Cancelar</string>
+    <string-array name="tipo_atreas">
+        <item>Azul</item>
+        <item>Verde</item>
+        <item>Amarillo</item>
+        <item>Rojo</item>
+    </string-array>
+</resources>

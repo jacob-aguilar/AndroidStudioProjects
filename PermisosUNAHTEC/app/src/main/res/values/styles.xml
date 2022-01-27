@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">#01579b</item>
+        <item name="colorPrimary">#01579b</item>
+        <item name="colorAccent">#F5D82F</item>
+    </style>
+
+    <style name="AppThemePrincipal" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">#01579b</item>
+        <item name="colorPrimary">#01579b</item>
+        <item name="colorAccent">#F5D82F</item>
+    </style>
+    <style name="miTema" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimaryDark">#01579b</item>
+        <item name="colorPrimary">#01579b</item>
+        <item name="colorAccent">#E2C520</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textColorHintInverse">#fff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">#fff</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10sp"></View>
+
+    <TextView
+        android:id="@+id/configuracionsonido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:text="@string/configuracionsonido"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15sp"></View>
+
+    <TextView
+        android:id="@+id/sonido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#555"
+        android:textSize="16sp"
+        android:text="@string/sonido"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10sp"></View>
+
+    <RadioGroup
+
+        android:id="@+id/radiosonido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/seleccionsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:checked="false"
+            android:text="@string/seleccionsi" />
+
+        <RadioButton
+            android:id="@+id/seleccionno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/seleccionno"
+            android:checked="true" />
+    </RadioGroup>
+
+</LinearLayout>

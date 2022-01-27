@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Spinneers</string>
+    <string name="colores">Spinneers</string>
+    <string name="frutas">Spinneers</string>
+    <string-array name= "colores">
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Amarillo</item>
+        <item>Azul</item>
+        <item>Negro</item>
+        <item>Blanco</item>
+    </string-array>
+</resources>

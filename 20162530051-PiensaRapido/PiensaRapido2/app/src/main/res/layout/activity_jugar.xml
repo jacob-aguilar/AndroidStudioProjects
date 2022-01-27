@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="22dp"
+                android:layout_height="5dp"></View>
+
+            <TextView
+                android:id="@+id/textIntentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textIntentos"
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textConteo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textPuntos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textPuntos"
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="246dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/pregunta10" />
+
+        <View
+            android:layout_width="59dp"
+            android:layout_height="4dp"></View>
+
+
+        <EditText
+            android:id="@+id/respuesta"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:hint="@string/respuesta"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="137dp"
+            android:layout_height="29dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="115dp"
+                android:layout_height="7dp"></View>
+
+            <Button
+                android:id="@+id/botonconfirmar"
+                android:layout_width="145dp"
+                android:layout_height="49dp"
+                android:background="@drawable/borde_redondo"
+                android:onClick="clickconfirmar"
+                android:text="@string/botonconfirmar" />
+
+            <View
+                android:layout_width="59dp"
+                android:layout_height="5dp"></View>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

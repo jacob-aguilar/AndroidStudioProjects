@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".EnviarCorreo">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tituloConsultas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:text="Olvidó su contraseña"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/instruccionesConsulta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tituloConsultas"
+                    android:layout_margin="10dp"
+                    android:text="Ingrese su correo a continuación"
+                    android:textColor="#757575"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"/>
+
+                <EditText
+                    android:id="@+id/EditCorreorestablecercontrasenia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instruccionesConsulta"
+                    android:layout_margin="10dp"
+                    android:hint="ejemplo@xxxx.xxx"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/btnEnviarCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EditCorreorestablecercontrasenia"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/boton"
+                    android:onClick="enviarCorreo"
+                    android:text="ENVIAR"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFF"
+
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Citas medicas en linea</string>
+    <string name="title_activity_registro_usuarios">registro_usuarios</string>
+    <string name="ip">https://clinicaprotoipo.000webhostapp.com</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>

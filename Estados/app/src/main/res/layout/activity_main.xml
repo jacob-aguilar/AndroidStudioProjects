@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+    android:id="@+id/color_rojo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Rojo"
+    android:onClick="check"
+    android:checked="true"
+    />
+
+    <CheckBox
+        android:id="@+id/color_verde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verde"
+        android:onClick="check"
+        android:checked="true"
+        />
+
+    <CheckBox
+        android:id="@+id/color_azul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Azul"
+        android:onClick="check"
+        android:checked="true"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

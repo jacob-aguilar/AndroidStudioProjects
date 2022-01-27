@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav1"
+        android:icon="@drawable/ic_info_outline_black_24dp"
+        android:title="navvegacion 1" />
+    <item
+        android:id="@+id/nav2"
+        android:icon="@drawable/ic_message_black_24dp"
+        android:title="Navegacion 2" />
+    <item
+        android:id="@+id/nav3"
+        android:icon="@drawable/ic_system_update_black_24dp"
+        android:title="Navegacion 3" />
+
+    <item
+        android:id="@+id/nav4"
+        android:icon="@drawable/ic_system_update_black_24dp"
+        android:title="Navegacion 3" />
+    <item
+        android:id="@+id/nav5"
+        android:icon="@drawable/ic_system_update_black_24dp"
+        android:title="Navegacion 3" />
+    <item
+        android:id="@+id/nav6"
+        android:icon="@drawable/ic_system_update_black_24dp"
+        android:title="Navegacion 3" />
+    <item
+        android:id="@+id/nav7"
+        android:icon="@drawable/ic_system_update_black_24dp"
+        android:title="Navegacion 3" />
+    <item
+        android:id="@+id/nav8"
+        android:icon="@drawable/ic_system_update_black_24dp"
+        android:title="Navegacion 3" />
+    <item
+        android:id="@+id/nav9"
+        android:icon="@drawable/ic_system_update_black_24dp"
+        android:title="Navegacion 3" />
+    <item
+        android:id="@+id/nav10"
+        android:icon="@drawable/ic_system_update_black_24dp"
+        android:title="Navegacion 3" />
+    <item
+        android:id="@+id/nav11"
+        android:icon="@drawable/ic_system_update_black_24dp"
+        android:title="Navegacion 3" />
+
+    <item
+        android:id="@+id/nav12"
+        android:icon="@drawable/ic_system_update_black_24dp"
+        android:title="Navegacion 3" />
+
+    <item
+        android:id="@+id/nav13"
+        android:icon="@drawable/ic_system_update_black_24dp"
+        android:title="Navegacion 3" />
+</menu>

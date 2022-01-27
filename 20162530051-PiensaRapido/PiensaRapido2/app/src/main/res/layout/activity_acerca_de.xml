@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35sp"></View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20sp"></View>
+
+    <TextView
+        android:id="@+id/hechopor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:text="@string/hechopor"/>
+
+    <ImageView
+        android:id="@+id/imagendesarollador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/acercade" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20sp"></View>
+
+    <TextView
+        android:id="@+id/infodesarollador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:text="@string/infodesarollador"/>
+
+</LinearLayout>

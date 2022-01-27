@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:alpha="1"
+    tools:context=".Login">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp">
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                card_view:cardBackgroundColor="#80000000"
+                card_view:cardElevation="15dp"
+                android:padding="10dp"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="4dp"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        card_view:cardBackgroundColor="#00FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:elevation="5dp"
+                                android:src="@drawable/puma" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:elevation="5dp"
+                                    android:text="Permisos"
+                                    android:textColor="#fff"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:elevation="5dp"
+                                    android:text="UNAH-TEC"
+                                    android:textColor="#fff"
+                                    android:textSize="18sp"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <EditText
+                        android:id="@+id/EditUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rectangulo_blanco"
+                        android:drawableLeft="@drawable/icono_usuario"
+                        android:hint=" Usuario"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff" />
+
+                    <android.support.design.widget.TextInputLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                        app:passwordToggleEnabled="true"
+                        card_view:passwordToggleTint="#ffff"
+                        android:textColorHint="#FFFF">
+
+                        <EditText
+                            android:id="@+id/EditContrasena"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/rectangulo_blanco"
+                            android:drawableStart="@drawable/contrasenia_icon"
+                            android:hint=" Contraseña"
+                            android:textColor="#FFFF"
+                            android:inputType="textPassword"
+                            android:textColorHint="#FFFF"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnIngresar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/boton_login"
+                        android:text="Ingresar"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_view"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rectangulo_blanco"
+                        android:padding="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textvCambiar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:text="Cambiar contraseña"
+                            android:textColor="#fff"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/textvOlvideContrasenia"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_toRightOf="@+id/textvCambiar"
+                            android:gravity="bottom"
+                            android:onClick="activityResetPassword"
+                            android:text="Olvidé contraseña"
+                            android:textColor="#fff"
+                            android:visibility="gone"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/mas_login_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="ocultarOpciones"
+                            android:text="Más"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

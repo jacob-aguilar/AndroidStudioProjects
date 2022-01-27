@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "92116879206",
+    "firebase_url": "https://permisos-unahtec-2.firebaseio.com",
+    "project_id": "permisos-unahtec-2",
+    "storage_bucket": "permisos-unahtec-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92116879206:android:ef95868798910bdf",
+        "android_client_info": {
+          "package_name": "proyectod.permisosunahtec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92116879206-7grl6u50vieg1mprkt89hgc7atft0b6g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "proyectod.permisosunahtec",
+            "certificate_hash": "281907bead5657fa3fb8cf96bc53769ab4268676"
+          }
+        },
+        {
+          "client_id": "92116879206-gstac0r54a2k2itca3109uat2fcbq96f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "proyectod.permisosunahtec",
+            "certificate_hash": "33fb7bd37aee14299d4be70135bb30510aff29c3"
+          }
+        },
+        {
+          "client_id": "92116879206-gaofa9tmkdadqtpevi3fnm5lsp12n2cs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM0W6KlQF1cIndGNmLNYNetHtM_uohuiE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92116879206-gaofa9tmkdadqtpevi3fnm5lsp12n2cs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
